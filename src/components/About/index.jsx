@@ -1,21 +1,24 @@
 import React from 'react'
 import profilePic from '../../assets/profilepic.jpg'
+import "./about.css"
 const About = () => {
     // make the image contained in the div, and then write something about myself
   return (
-    <div>
-        <section>
-            <div>
+    <>
+    <header className="heading">
+        <h1>Matthew Thomas</h1>
+    </header>
+        <section className="profile-container">
+            <div className="image-container">
                 <img src={profilePic} alt="profilePic" />
             </div>
-            <div>
+            <div className="profile-content">
                 <p>
-                    
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt itaque nostrum atque nam id quod inventore deleniti exercitationem repellat praesentium est dolores, corporis vero, incidunt voluptatum! Velit perspiciatis nostrum reiciendis.
+                    I'm New Jersey born and raised. My hobbies include playing video games, going on long drives, reading non-fiction books, and lifting weights.
                 </p>
             </div>
         </section>
-    </div>
+    </>
   )
 }
 
